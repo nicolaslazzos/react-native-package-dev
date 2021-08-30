@@ -1,36 +1,37 @@
 {
-	"name": "packagedev",
-	"version": "1.0.0",
-	"description": "Starter project to dev and test packages for react-native and react-native-web.",
-	"main": "index.js",
-	"scripts": {
-		"dev": "next",
-		"start": "next start -p $PORT",
-		"build": "next build",
-		"export": "next export"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/nicolaslazzos/react-native-package-dev.git"
-	},
-	"author": "Nicolas Lazzos",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/nicolaslazzos/react-native-package-dev/issues"
-	},
-	"homepage": "https://github.com/nicolaslazzos/react-native-package-dev#readme",
-	"dependencies": {
-		"next": "^10.0.5",
-		"next-images": "^1.7.0",
-		"next-transpile-modules": "^6.3.0",
-		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
-		"react-native-web": "^0.15.0"
-	},
-	"devDependencies": {
-		"@types/node": "^14.14.41",
-		"@types/react": "^17.0.2",
-		"@types/react-native": "^0.63.50",
-		"typescript": "^4.2.2"
-	}
+  "name": "packagedev",
+  "version": "1.0.0",
+  "description": "Starter project to dev and test packages for react-native and react-native-web.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run remove:react-native && next",
+    "start": "next start -p $PORT",
+    "build": "next build",
+    "export": "next export",
+    "remove:react-native": "rm -r ./node_modules/react-native &"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolaslazzos/react-native-package-dev.git"
+  },
+  "author": "Nicolas Lazzos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicolaslazzos/react-native-package-dev/issues"
+  },
+  "homepage": "https://github.com/nicolaslazzos/react-native-package-dev#readme",
+  "dependencies": {
+    "next": "^10.0.5",
+    "next-images": "^1.7.0",
+    "next-transpile-modules": "^6.3.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-native-web": "^0.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "@types/react": "^17.0.2",
+    "@types/react-native": "^0.63.50",
+    "typescript": "^4.2.2"
+  }
 }
