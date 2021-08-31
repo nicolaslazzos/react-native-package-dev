@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/nicolaslazzos/react-native-package-dev#readme",
   "dependencies": {
-    "next": "^10.0.5",
+    "next": "11.1.2",
     "next-images": "^1.7.0",
     "next-transpile-modules": "^6.3.0",
     "react": "^17.0.1",
